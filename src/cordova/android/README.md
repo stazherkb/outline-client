@@ -6,12 +6,12 @@ The main entrypoint to Android's Java code is `cordova-plugin-outline/android/ja
 
 ## Building the Android app
 
-> 💡 NOTE: To easiest way to get set up for Android on a new environment is to use `tools/build/setup_macos_android.sh` or `tools/build/setup_linux_android.sh`.
+> 💡 NOTE: The easiest way to get the set up for Android on a new environment is to use `tools/build/setup_macos_android.sh` or `tools/build/setup_linux_android.sh`.
 
 Additional requirements for Android:
 
 - [Java Development Kit (JDK) 11](https://jdk.java.net/archive/)
-  - Set `JAVA_HOME` environment variable if you are building on Windows
+  - If you downloaded tar.gz archive, unzip it where you need it and then set `JAVA_HOME=/path/to/openjdk-11-jdk`
 - Latest [Android Sdk Commandline Tools](https://developer.android.com/studio/command-line) ([download](https://developer.android.com/studio#command-line-tools-only))
   - Place it at `$HOME/Android/sdk/cmdline-tools/latest`
   - Set `ANDROID_HOME` environment variable
@@ -19,6 +19,11 @@ Additional requirements for Android:
 - [Gradle 7.3+](https://gradle.org/install/)
 
 [Android Studio 2020.3.1+](https://developer.android.com/studio) is not required, but it's helpful if you are developing Android code.
+
+To load all dependencies, go to outline-client root dir, then run:
+```sh
+  npm i
+```
 
 To build for android, run:
 
